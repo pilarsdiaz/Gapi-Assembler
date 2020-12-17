@@ -45,40 +45,6 @@ include extras.mac
 Inicio:
 	mov ax,@data
 	mov ds, ax
-<<<<<<< HEAD
-;---------------------------
-	call clrscr
-	;titulo 
-
-	;Menu del editor 
-	mov color,30h
- 	mov lineas,5
- 	mov fini,19
- 	mov cini,0
- 	mov ffin,24
- 	mov cfin,79
- 	call clrscr
-	;Crear msj1
-	call gotoxy
-	mov ah,09h
-	lea dx,msj1
-	int 21h
-	; Guardar msj 2
-	add columna,9
-	call gotoxy
-	mov ah,09h
-	lea dx,msj2
-	int 21h
-	;Abrir msj 3
-	add columna,19
-	call gotoxy
-	mov ah,09h
-	lea dx,msj3
-	int 21h
-
-	
-
-=======
 ;=====================FUNCION PRINCIPAL====================
 	call Pinta_title
 	call Pinta_edit	
